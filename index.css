@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+    background: #fff;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar Container  */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+
+    transition: 0.5s;
+    color: #666;
+    text-align: center;
+
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.navbar ul li:nth-last-child(-n+3) a {
+    padding: 10px 10px;
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Home section */
+.home {
+    margin-top: 150px;
+    margin-bottom: 100px
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    align-items: center;
+}
+
+.home-img {
+
+    width: 370px;
+    height: 370px;
+
+
+    background: url('Asset/50353683\ 1.png') no-repeat;
+}
+
+.home-heading {
+    width: 636px;
+    height: 297px;
+
+    color: var(--Solid-Heading, #42446E);
+    font-size: 58px;
+
+    font-weight: 700;
+    line-height: 70px;
+    /* 120.69% */
+    letter-spacing: -1px;
+}
+
+.home-heading span {
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+
+/* tech stack */
+.tech-stack {
+    margin-bottom: 100px;
+    margin-top: 150px;
+
+}
+
+.tech-heading,
+.projects-heading {
+    color: #42446E;
+    text-align: center;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 54.167% */
+}
+
+.tech-subheading,
+.projects-subheading {
+    margin-top: 30px;
+    color: var(--dark-content, #666);
+    text-align: center;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 81.25% */
+}
+
+.tech-grid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 100px;
+}
+
+/* Project */
+.projects {
+
+    margin-top: 100px;
+}
+
+.projects-grid {
+    margin-top: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    row-gap: 62px;
+
+}
+
+.project-card-heading {
+    color: #000;
+    text-align: center;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 92.857% */
+    margin-top: 20px;
+}
+
+.project-card-subheading {
+    color: var(--dark-content, #666);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    /* 144.444% */
+    margin-top: 17px;
+    word-break: break-word;
+}
+
+.project-card-subheading-2 {
+    color: var(--Solid-Heading, #42446E);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.project-card-subheading-2 span {
+    color: var(--Solid-Heading, #42446E);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.project-links {
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+}
+
+.link-item img {
+    margin-right: 5px;
+    /* Adjust the margin between image and text */
+}
+
+/* footer */
+.footer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.footer-line {
+    margin-top: 50px;
+    width: 1050px;
+    height: 5.682px;
+    flex-shrink: 0;
+    border-bottom: 1px solid #ccc;
+    /* Added style (solid) and width (1px) */
+}
+
+#footer-last {
+    margin-top: 50px;
+}
+
+.last-nav {
+    color: var(--dark-content, #666);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+.last-nav span {
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+/* Utility */
+
+.container {
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 0 15px;
+
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* card */
+.card {
+    border-radius: 20px;
+
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+    height: 567px;
+
+
+}
+/* Hamburger */
+.Hamburger-button{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.Hamburger-button .hamburger-line{
+    width: 30px;
+    height: 3px;
+    background:#333;
+    margin: 6px 0;
+    
+    
+}
+/* Mobile menu */
+.mobile-menu{
+    position:fixed;
+    top: 0;
+    right:-300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease-in-out;
+}
+.mobile-menu.active{
+    right: 0;
+}
+.mobile-menu ul{
+    margin-top: 100px;
+    padding-right: 10px;
+
+}
+.mobile-menu ul li{
+    margin: 10px 0;
+}
+.mobile-menu ul li a{
+    font-size: 20px;
+    transition: 0.3s;
+}
+@media (max-width:670px) {
+    .home-content{
+        grid-template-columns: 1fr;
+      
+    }
+    .tech-grid{
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+    .tech-heading,
+.projects-heading {
+    font-size: 30px;
+}
+.navbar .main-menu{
+    display: none;
+}
+.navbar .Hamburger-button{
+    display: block;
+}
+.footer-line{
+    max-width: 100%;
+}
+.home-heading{
+    font-size: 30px;
+    width: 100%;
+    text-align: center  ;
+}
+.tech-subheading{
+    font-size: 20px;
+}
+.footer .logo{
+    margin-left: 135px;
+}
+.footer .navbar .main-menu{
+   
+    display: block;
+    flex-direction: row;
+  
+}
+.footer .navbar .main-menu ul{
+   
+   display: block;
+   justify-content: center;
+  
+}
+.footer .navbar .container{
+    display: block;
+}
+}
+/* Add this media query at the end of your CSS file */
